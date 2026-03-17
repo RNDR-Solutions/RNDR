@@ -18,12 +18,65 @@
             background: #f5f5f5;
         }
         
+        header {
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+        }
+        
+        .logo-text {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #000;
+        }
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
             background: white;
-            border-top: 3px solid #000;
         }
         
         h1 {
@@ -68,9 +121,21 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="header-content">
+            <a href="/RNDR/index.html" class="logo-header">
+                <span class="logo-text">RNDR</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/RNDR/index.html">Home</a></li>
+                <li><a href="/RNDR/terms-of-service.html">Terms</a></li>
+                <li><a href="/RNDR/privacy-policy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </header>
+    
     <div class="container">
-        <h1>RNDR</h1>
-        <h1 style="font-size: 1.3em; margin-top: -15px; font-weight: 400; color: #666;">Privacy Policy</h1>
+        <h1>Privacy Policy</h1>
         <p class="last-updated">Last updated: March 2025</p>
         
         <h2>1. Introduction</h2>
@@ -98,10 +163,10 @@
         <p>All your data is stored locally on your computer. We do not transmit, store, or process your personal data on external servers or in the cloud (unless you choose cloud deployment as an optional feature).</p>
         
         <h2>5. Data Security</h2>
-        <p>You are responsible for securing your computer and keeping your TikTok credentials safe. RNDR stores credentials locally using standard encryption practices. Keep your computer password-protected and do not share API keys.</p>
+        <p>You are responsible for securing your computer and keeping your TikTok credentials safe. RENDR stores credentials locally using standard encryption practices. Keep your computer password-protected and do not share API keys.</p>
         
         <h2>6. Third-Party Services</h2>
-        <p>RNDR integrates with TikTok's API. Any data sent to TikTok is governed by TikTok's Privacy Policy. We recommend reviewing TikTok's privacy practices.</p>
+        <p>RENDR integrates with TikTok's API. Any data sent to TikTok is governed by TikTok's Privacy Policy. We recommend reviewing TikTok's privacy practices.</p>
         
         <h2>7. Data We Do NOT Collect</h2>
         <p>RNDR does not:</p>
@@ -114,7 +179,7 @@
         </ul>
         
         <h2>8. Cookies and Tracking</h2>
-        <p>RNDR is a desktop application and does not use cookies or tracking technology.</p>
+        <p>RENDR is a desktop application and does not use cookies or tracking technology.</p>
         
         <h2>9. Data Deletion</h2>
         <p>You can delete all RNDR data by removing the application folder from your computer. This will erase all stored credentials, configurations, and local data.</p>
@@ -123,7 +188,7 @@
         <p>We may update this Privacy Policy at any time. Changes will be reflected in the "Last updated" date at the top of this page.</p>
         
         <h2>11. Contact</h2>
-        <p>If you have questions about this Privacy Policy or how RNDR handles your data, please contact the application creator.</p>
+        <p>If you have questions about this Privacy Policy or how RENDR handles your data, please contact the application creator.</p>
         
         <h2>12. Compliance</h2>
         <p>RNDR is designed to be compliant with privacy best practices. Since it operates locally on your machine, it does not require GDPR, CCPA, or other data privacy law compliance in the same way as cloud-based services.</p>

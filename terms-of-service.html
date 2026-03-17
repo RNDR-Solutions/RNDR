@@ -18,12 +18,65 @@
             background: #f5f5f5;
         }
         
+        header {
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+        }
+        
+        .logo-text {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #000;
+        }
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
             background: white;
-            border-top: 3px solid #000;
         }
         
         h1 {
@@ -68,13 +121,25 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="header-content">
+            <a href="/RNDR/index.html" class="logo-header">
+                <span class="logo-text">RNDR</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/RNDR/terms-of-service.html">Terms</a></li>
+                <li><a href="/RNDR/privacy-policy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </header>
+    
     <div class="container">
-        <h1>RNDR</h1>
-        <h1 style="font-size: 1.3em; margin-top: -15px; font-weight: 400; color: #666;">Terms of Service</h1>
+        <h1>Terms of Service</h1>
         <p class="last-updated">Last updated: March 2025</p>
         
         <h2>1. Acceptance of Terms</h2>
-        <p>By using RNDR, you agree to these Terms of Service. If you do not agree to any part of these terms, you may not use this application.</p>
+        <p>By using RENDR, you agree to these Terms of Service. If you do not agree to any part of these terms, you may not use this application.</p>
         
         <h2>2. Description of Service</h2>
         <p>RNDR is a desktop application designed to automate the creation and posting of video content to TikTok. The application processes local video assets, audio files, and text to generate videos and post them to your TikTok account as drafts.</p>
@@ -82,9 +147,9 @@
         <h2>3. User Responsibilities</h2>
         <p>You are responsible for:</p>
         <ul>
-            <li>Ensuring all content you create with RNDR is original or you have rights to use it</li>
+            <li>Ensuring all content you create with RENDR is original or you have rights to use it</li>
             <li>Complying with TikTok's Terms of Service and Community Guidelines</li>
-            <li>Not using RNDR for any unlawful, harmful, or malicious purposes</li>
+            <li>Not using RENDR for any unlawful, harmful, or malicious purposes</li>
             <li>Keeping your TikTok credentials and API keys secure</li>
             <li>Protecting your login information and computer from unauthorized access</li>
         </ul>
@@ -96,13 +161,13 @@
         <p>RNDR's code and design are the property of the creator. Your content created with RNDR remains your property, but you must have the right to post it to TikTok.</p>
         
         <h2>6. Third-Party Services</h2>
-        <p>RNDR integrates with TikTok's API. Your use of TikTok is governed by TikTok's Terms of Service. We are not responsible for TikTok's policies or changes to their service.</p>
+        <p>RENDR integrates with TikTok's API. Your use of TikTok is governed by TikTok's Terms of Service. We are not responsible for TikTok's policies or changes to their service.</p>
         
         <h2>7. Disclaimer of Liability</h2>
         <p>RNDR is provided "as is" without any warranties. We are not responsible for data loss, deleted videos, API failures, or any other damages resulting from the use of this application.</p>
         
         <h2>8. Changes to Terms</h2>
-        <p>We reserve the right to modify these terms at any time. Continued use of RNDR constitutes acceptance of updated terms.</p>
+        <p>We reserve the right to modify these terms at any time. Continued use of RENDR constitutes acceptance of updated terms.</p>
         
         <h2>9. Termination</h2>
         <p>We reserve the right to terminate access to RNDR if you violate these terms or TikTok's policies.</p>
